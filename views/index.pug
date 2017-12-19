@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <title>Simon Lang</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="src/router.js"></script>
+</head>
+<body class="loaded">
+  <header class="header">
+    <i class="fa fa-envelope header__contact"></i>
+    <div class="simon">
+      <img src="img/simon.png" alt="Simon Lang" class="simon__img">
+      <div>
+        <h1 class="simon__name flat">Simon Lang</h1>
+        <p class="simon__tagline flat">Pretty good web programmer</p>
+      </div>
+    </div>
+    <nav class="tabs">
+      <a href="#/home" class="tabs__item tabs__item--selected">About me</a>
+      <a href="#/employment" class="tabs__item">Employment</a>
+      <a href="#/portfolio" class="tabs__item">Portfolio</a>
+      <a href="#/skills" class="tabs__item show-desktop">Skills</a>
+    </nav>
+  </header>
+  <div class="view" id="view">
+    <div class="container">
+        include _home
+        include _employment
+        include _skills
+        include _portfolio
+    </div>
+  </div>
+    //- include _code_samples
+</body>
+</html>

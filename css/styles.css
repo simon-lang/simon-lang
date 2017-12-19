@@ -314,3 +314,6 @@ ul {
 
 }
 
+.hidden {
+    display: none;
+}
