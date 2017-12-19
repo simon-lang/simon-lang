@@ -113,3 +113,70 @@ ul {
 .tabs__item--selected {
   opacity: 1;
 }
+
+/* Home animation loading */
+
+@keyframes loadHeader {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes loadSimon {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes loadTabs {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes loadView {
+  0% {
+    opacity: 0;
+    transform: scale(0.99) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.loaded .header {
+  opacity: 0;
+  animation: loadHeader 375ms 375ms ease forwards;
+}
+
+.loaded .simon {
+  opacity: 0;
+  animation: loadSimon 300ms 600ms ease forwards;
+}
+
+.loaded .tabs {
+  opacity: 0;
+  animation: loadTabs 375ms 800ms ease forwards;
+}
+
+.loaded .view {
+  opacity: 0;
+  animation: loadView 375ms 1200ms ease forwards;
+}
+
