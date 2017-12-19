@@ -65,7 +65,7 @@ ul {
 .header {
   background-color: #09496C;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  padding-top: 1.25em;
+  overflow: hidden;
 }
 
 .header__contact {
@@ -217,12 +217,10 @@ ul {
     font-size: 18px;
   }
 
-  body {
-    display: flex;
-    align-items: center;
-  }
-
   .header {
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 400px;
     padding-top: 0;
@@ -230,7 +228,8 @@ ul {
 
   .view {
     flex: 1;
-    padding: 3em;
+    padding: 2.5em;
+    padding-left: calc(400px + 2.5em);
   }
 
   .tabs {
