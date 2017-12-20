@@ -3,4 +3,4 @@ build:
 	cp views/index.html views.html
 
 dev:
-	./node_modules/.bin/pug -w views/index.pug -o views.html
+	python -m SimpleHTTPServer 8000
