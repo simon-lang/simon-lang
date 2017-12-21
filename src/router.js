@@ -45,6 +45,10 @@ addRoute('/skills', 'skills', () => {
     console.log('skills')
 })
 
+addRoute('/about', 'about', () => {
+    console.log('about')
+})
+
 window.addEventListener('hashchange', router)
 window.addEventListener('load', () => {
     router()
