@@ -63,6 +63,7 @@ ul {
 }
 
 .header {
+  background-color: #09496C;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   overflow: hidden;
 }
@@ -86,7 +87,7 @@ ul {
   background-image: url(../img/family.jpg);
   background-size: cover;
   height: 240px;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.25);
+  text-shadow: 0 1px 1px rgba(0,0,0,0.5);
 }
 
 .simon > div {
@@ -108,7 +109,7 @@ ul {
 .tabs {
   display: flex;
   align-items: center;
-  background-color: #09496C;
+  background-color: rgba(0,0,0,0.1);
 }
 
 .tabs__item {
@@ -158,9 +159,11 @@ ul {
 @keyframes loadTabs {
   0% {
     opacity: 0;
+    transform: translateY(20px);
   }
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -257,9 +260,6 @@ ul {
   }
 
   .simon {
-    border-bottom: 1px solid rgba(255,255,255,0.25);
-    padding-bottom: 2.5em;
-    padding-top: 3em;
     margin-bottom: 1.25em;
   }
 
