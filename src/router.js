@@ -25,6 +25,10 @@ function router() {
 
 // export default addRoute
 
+addRoute('/', 'home', () => {
+    console.log('home')
+})
+
 addRoute('/home', 'home', () => {
     console.log('home')
 })
