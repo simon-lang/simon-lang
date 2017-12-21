@@ -1,11 +1,9 @@
 window.addEventListener('load', (event) => {
 
     document.querySelectorAll('.read-more').forEach(d => {
-        console.log(d)
         d.addEventListener('click', function (e) {
             const el = e.target
             e.preventDefault()
-            console.log(el)
             el.parentElement.querySelector('.hidden').classList.remove('hidden')
             // $(el).find('.read-more').text(function (index, text) {
             //     if (text === 'more info...') {
