@@ -12,7 +12,7 @@ function router() {
     el = el || document.getElementById('view')
     var url = location.hash.slice(1) || '/'
     var route = routes[url]
-    console.log(url, el, url, route)
+    // console.log(url, el, url, route)
     if (el && route && route.controller) {
         // el.innerHTML = template(route.templateId, new route.controller())
         // temporary solution instead of real templating
@@ -25,44 +25,18 @@ function router() {
 
 // export default addRoute
 
-addRoute('/', 'home', () => {
-    console.log('home')
-})
+const defaultController = () => {
+    // ...
+}
 
-addRoute('/home', 'home', () => {
-    console.log('home')
-})
-
-addRoute('/employment', 'employment', () => {
-    console.log('employment')
-})
-
-addRoute('/portfolio', 'portfolio', () => {
-    console.log('portfolio')
-})
-
-addRoute('/skills', 'skills', () => {
-    console.log('skills')
-})
-
-addRoute('/about', 'about', () => {
-    console.log('about')
-})
+addRoute('/', 'home', defaultController)
+addRoute('/home', 'home', defaultController)
+addRoute('/employment', 'employment', defaultController)
+addRoute('/portfolio', 'portfolio', defaultController)
+addRoute('/skills', 'skills', defaultController)
+addRoute('/about', 'about', defaultController)
 
 window.addEventListener('hashchange', router)
 window.addEventListener('load', () => {
     router()
 })
-
-// // templating
-// if (supportsTemplate()) {
-//     forEach(Object.keys(data), function (i) {
-//         var review = data[i];
-//         var t = document.querySelector('#review-template');
-//         var date = new Date(review.created_at);
-//         t.content.querySelector('.title').textContent = review.title;
-//         t.content.querySelector('.message').textContent = review.content;
-//         var clone = document.importNode(t.content, true);
-//         document.getElementById('reviews').appendChild(clone);
-//     });
-// }

@@ -1,10 +1,4 @@
 window.addEventListener('load', (event) => {
-    console.log('load')
-    // document.querySelectorAll('a.nav').forEach(el => {
-    //     el.addEventListener('click', e => {
-    //         document.getElementById('content').innerHTML = e.target.innerHTML
-    //     })
-    // })
 
     document.querySelectorAll('.read-more').forEach(d => {
         console.log(d)
@@ -27,7 +21,4 @@ window.addEventListener('load', (event) => {
             // })
         })
     })
-    // $('.read-more-items .hidden').addEventListener('click', function (e) {
-    //     return e.stopPropagation()
-    // })
 })
