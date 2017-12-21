@@ -42,7 +42,9 @@ addRoute('/skills', 'skills', () => {
 })
 
 window.addEventListener('hashchange', router)
-window.addEventListener('load', router)
+window.addEventListener('load', () => {
+    router()
+})
 
 // // templating
 // if (supportsTemplate()) {
