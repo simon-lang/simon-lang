@@ -229,7 +229,7 @@ ul {
   .view {
     flex: 1;
     padding: 2.5em;
-    padding-left: calc(400px + 2.5em);
+    margin-left: calc(400px);
   }
 
   .tabs {
