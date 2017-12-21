@@ -20,6 +20,10 @@ function router() {
         el.querySelector('#' + route.templateId).classList.remove('hidden')
         // const c = new route.controller
         // document.title = c.title || 'scratch'
+        document.querySelectorAll('nav a').forEach(el => {
+            const active = el.getAttribute('href') === `#${url}`
+            el.classList.toggle('tabs__item--selected', active)
+        })
     }
 }
 
