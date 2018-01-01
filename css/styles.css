@@ -63,6 +63,7 @@ ul {
 }
 
 .header {
+  background-color: #09496C;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   overflow: hidden;
 }
@@ -80,20 +81,9 @@ ul {
 
 .simon {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  align-items: center;
   line-height: 1.2;
-  background-image: url(../img/family.jpg);
-  background-size: cover;
-  height: 240px;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.25);
-}
-
-.simon > div {
   padding: 1.25em;
-  text-align: center;
-  width: 100%;
-  background: linear-gradient(#093f5f00, 50%, #093f5f);
 }
 
 .simon__img {
@@ -108,7 +98,7 @@ ul {
 .tabs {
   display: flex;
   align-items: center;
-  background-color: #09496C;
+  background-color: rgba(0,0,0,0.1);
 }
 
 .tabs__item {
@@ -158,9 +148,11 @@ ul {
 @keyframes loadTabs {
   0% {
     opacity: 0;
+    transform: translateY(20px);
   }
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
