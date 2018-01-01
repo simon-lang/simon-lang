@@ -60,6 +60,7 @@ ul {
 
 .lead {
   color: #fff;
+  font-size: 1.2em;
 }
 
 .header {
@@ -337,4 +338,8 @@ ul.spaced > li {
     padding: 1em;
     margin-top: 1em 2em;
     background: rgba(0,0,0,0.1)
+}
+h1 .fa {
+    float: right;
+    opacity: 0.5;
 }
