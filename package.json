@@ -1,23 +1,25 @@
 {
-  "name": "simon-lang",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/simon-lang/simon-lang.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/simon-lang/simon-lang/issues"
-  },
-  "homepage": "https://github.com/simon-lang/simon-lang#readme",
-  "dependencies": {
-    "pug": "^2.0.0-rc.4",
-    "pug-cli": "^1.0.0-alpha6"
-  }
+    "name": "simon-lang",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "node_modules/.bin/pug -w views/index.pug -o .",
+        "build": "node_modules/.bin/pug views/index.pug -o .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/simon-lang/simon-lang.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/simon-lang/simon-lang/issues"
+    },
+    "homepage": "https://github.com/simon-lang/simon-lang#readme",
+    "dependencies": {
+        "pug": "^2.0.0-rc.4",
+        "pug-cli": "^1.0.0-alpha6"
+    }
 }

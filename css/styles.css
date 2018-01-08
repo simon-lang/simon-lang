@@ -343,3 +343,17 @@ h1 .fa {
     float: right;
     opacity: 0.5;
 }
+/* hacks */
+ul.unstyled {
+    margin-left: 0;
+}
+ul.unstyled>li {
+    list-style-type: none;
+    padding: 0.5em;
+}
+ul.unstyled>li>a>span {
+    margin-left: 0.5em;
+}
+ul.unstyled > li > a {
+    text-decoration: none;
+}
