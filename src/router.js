@@ -1,5 +1,3 @@
-const template = id => id // TODO
-
 var routes = {}
 
 function addRoute(path, templateId, controller) {
@@ -12,14 +10,9 @@ function router() {
     el = el || document.getElementById('view')
     var url = location.hash.slice(1) || '/'
     var route = routes[url]
-    // console.log(url, el, url, route)
     if (el && route && route.controller) {
-        // el.innerHTML = template(route.templateId, new route.controller())
-        // temporary solution instead of real templating
         el.querySelectorAll('section').forEach(view => view.classList.add('hidden'))
         el.querySelector('#' + route.templateId).classList.remove('hidden')
-        // const c = new route.controller
-        // document.title = c.title || 'scratch'
         document.querySelectorAll('nav a').forEach(el => {
             const active = el.getAttribute('href') === `#${url}`
             el.classList.toggle('tabs__item--selected', active)
